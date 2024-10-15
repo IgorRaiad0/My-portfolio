@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bg-color: #000;
+  --text-color: #fff;
+  --main-color: #05748b;
+  --secund-bg: #046c94;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background:  #010717;
+  color: var(--text-color);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem;
+  padding: 2rem 9%;
+  background: #2e3241ee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+.header .home {
+  color: #fff;
+  font-size: 3rem;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+  
+}
+
+.header .home:hover {
+  color: #ffffff;
+  border-bottom: 3px solid #ff3708;
+}
+
+.navbar a {
+  font-size: 1.8rem;
+  color: var(--text-color);
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+  color: var(--text-color);
+  border-bottom: 3px solid #ff3708;
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--main-color);
+  display: none;
+}
+
+@media (max-width: 995px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    border-left: 3px solid var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+    border-bottom-left-radius: 2rem;
+    padding: 1rem 3%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+  }
+  .navbar.active {
+    display: block;
+  }
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+}
+
+
+
+/* Configuração da seção */
+.section {
+  background-image: url(../images/1Stars.svg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:center; /* Muda para 'cover' para preencher a seção */
+  height: 100vh; /* Garante que a seção ocupe 100% da altura da janela */
+  padding-top: 10rem; /* Você pode ajustar o padding se necessário */
+  padding-bottom: 14rem; /* Evite espaços extras se não forem necessários */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  flex-direction: row; 
+}
+
+/* Div do Spaceman com fundo azul */
+.left-panel {
+  background-color: none; 
+  width: 35%; /* Largura proporcional ao conteúdo de texto */
+  height: 40rem; /* Ajuste conforme necessário */
+  display: flex;
+  justify-content: center;
+}
+
+/* Div de texto com fundo vermelho */
+.right-panel {
+  background-color: none; /* Fundo vermelho */
+  width: 50%; /* Largura proporcional */
+  margin-top: 8rem;
+  padding: auto;
+}
+
+.right-panel .text-igor{
+  text-align: justify;
+}
+
+/* Modelo Spaceman */
+.spaceman {
+  width: 100%; /* O modelo ocupa toda a largura do painel */
+  height: auto; /* Mantém a proporção */
+  max-height: 100%; /* Impede que o modelo ultrapasse a altura do painel */
+  margin-left: -85rem;
+  margin-top: 8rem;
+}
+
+/* Estilos adicionais para o texto */
+.initial-text {
+  max-width: 100%;
+}
+
+.initial-text h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.initial-text p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+span {
+  color: var(--text-color);
+}
+
+.initial-text .name {
+  color: aqua;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.815);
+}
+
+.initial-text .animated-words {
+  color: aqua;
+  
+}
+
+.social-icon a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid var(--main-color);
+  font-size: 2rem;
+  border-radius: 50%;
+  color: var(--main-color);
+  margin: 2rem 1.5rem;
+  transition: 0.3s ease;
+}
+
+.social-icon a:hover {
+  color: white;
+  transform: scale(1.3) translateY(-5px);
+  background: var(--main-color);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+.social-icon .contact {
+  margin-top: 1rem;
+  color: var(--main-color);
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px black;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2.8rem;
+  background: var(--bg-color);
+  border-radius: 4rem;
+  font-size: 1.6rem;
+  color: var(--main-color);
+  border: 2px solid var(--main-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.03);
+  background-color: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 0 0 25px var(--secund-bg);
+}
+
+.pessoal-description {
+  font-size: 34px;
+  font-weight: 600;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+}
+
+.pessoal-description span:first-child {
+  margin-right: 0.5rem;
+}
+
+.animated-words {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.animated-words::before {
+  content: 'Eu sou: ';
+  position: absolute;
+  left: 0;
+  color: transparent;
+}
+
+.animated-words::after {
+  content: 'Desenvolvedor Web';
+  display: inline-block;
+  animation: words 8s infinite, typing 8s steps(14) infinite;
+}
+
+@keyframes words {
+  0%, 20% {
+    content: 'Desenvolvedor Web';
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.753);
+  }
+  21%, 40% {
+    content: 'Programador';
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.753);
+  }
+  41%, 60% {
+    content: 'Designer';
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.753);
+  }
+  61%, 80% {
+    content: 'Editor de Vídeo';
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.753);
+  }
+  81%, 100% {
+    content: 'Técnico em Automação';
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.753);
+  }
+}
+
+@keyframes typing {
+  0%, 100% {
+    width: 0;
+  }
+  5%, 20%,
+  25%, 40%,
+  45%, 60%,
+  65%, 80%, 
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+
+@media (max-width:1000px) {
+    .home{
+        flex-direction: column;
+        margin: 5rem 4 rem;
+    }
+
+    .section .initial-text h3{
+        font-size: 2.5rem;
+    }
+
+    .initial-text h1{
+        font-size: 5rem;
+    }
+
+    .perfil{
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    
+}
+
+
+/*skiiis*/
+
+.skills {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  background-color:  #010717;
+  padding: 4rem;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 2rem; 
+}
+
+.skills .perfil {
+  display: flex;
+  background-color: none;
+  width: 30vw;
+  height: 50vw;
+  gap: 1px; 
+  flex-direction: column; 
+  align-items: center;
+ 
+}
+
+.perfil .perf {
+  margin-bottom: 1rem; 
+  font-size: 5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.753); 
+
+}
+
+.skills .perfil img {
+    transition: transform 0.5s ease, filter 0.5s ease;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    
+}
+
+.skills .perfil img:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 25px var(--main-color));
+}
+
+.perfil .nome {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem; 
+  text-align: center;
+  font-size: 6rem;
+}
+
+.perfil .ads {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.skills .container h2 {
+  margin-bottom: 1rem; 
+  color: var(--text-color);
+  font-size: 6rem;
+  text-align: center; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.753); 
+}
+
+
+.skills .container{
+  background-color: #e2f1e781;
+  color: var(--text-color);
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 60%;
+  height: auto;
+  margin: auto; 
+  margin-right: 5rem; 
+}
+
+.skills .container .row{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+
+}
+
+.skills .container .bar {
+    margin-bottom: 15px;
+    padding: 10PX;
+    border-radius: 1rem;
+    background: var(--bg-color);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.skills .container .bar:hover {
+    box-shadow: 0 4px 10px var(--main-color);
+    transform: scale(1.03);
+
+}
+
+.skills .container .bar .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills .container .bar .info span{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+@media scream and (max-width:600px){
+    .skills .container{
+        margin: 0;
+        padding: 0;
+    }
+    .skills .container .row{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 1rem;
+        padding: 2rem 0.2rem 2rem 0.2rem;
+        gap: 1rem;
+    }
+    .skills .container{
+        margin-top: 5px;
+        width: 100%;
+    }
+}
+
+.curriculo{
+    background-color: #010717;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.curriculo .container{
+  background-color: #e2f1e7ad;
+  color: var(--text-color);
+  border-radius: 1rem;
+  width: 50%;
+  height: 50rem;
+  margin: auto;
+  margin-top: 2rem; 
+  margin-bottom: 1rem; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; 
+}
+
+.container h2{
+    margin-top: 1rem;
+    font-size: 6rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.753); 
+
+}
+
+
+.dbutton {
+    margin-top: 10rem;
+    display: inline-block;
+    padding: 3rem 4.8rem;
+    background: var(--bg-color);
+    border-radius: 4rem;
+    font-size: 3.6rem;
+    color: var(--text-color);
+    border: 4px solid var(--main-color);
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.dbutton:hover {
+  transform: scale(1.03);
+  background-color: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 0 0 25px var(--main-color);
+}
+
+
+
+
+.curriculo .img img{
+    width: 27vw;
+    border-radius: 10%;
+    margin-left: 3rem;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: var(--main-color);
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 15px;
+    color: #000;
+}
+
+.footer .social a{
+    font-size: 25px;
+    color: #000;
+    border: 2px solid black;
+    width: 42px;
+    height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+.footer .social a:hover{
+    transform: scale(1.2)translatey(-5px);
+    background: black;
+    color: var(--secund-bg);
+}
+
+.containerf{
+    text-align: center;
+}
+
+.year{
+    font-size: 1.5rem;
+}
+
+
+
+

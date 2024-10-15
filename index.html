@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="module" src="main.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+        
+    </head>
+
+        <body>
+
+            <header class="header">
+
+                <a href="#home" class="home">Início</a>
+
+                <i class="fa-solid fa-bars menu-icon"></i>
+
+                <nav class="navbar">
+                <a href="#home" class="active">Portfólio</a>
+                <a href="#Skills">Skills</a>
+                <a href="#Curriculo">Currículo</a>
+                </nav>
+
+            </header>
+            
+            <section class="section" id="home">
+                <div class="left-panel">
+                    <div class="spaceman" id="container3D"></div>
+                </div>
+                
+                <div class="right-panel">
+                    <div class="initial-text">
+                        <h1>Oi, meu nome é <span class="name">Igor!</span></h1>
+                        <h3 class="pessoal-description">
+                            <span>Eu sou:</span>
+                            <span class="animated-words"></span>
+                        </h3>
+                        <p class="text-igor">
+                            Igor Ryan atualmente é um estudante do terceiro período de Análise e Desenvolvimento de Sistemas no Instituto Federal do Maranhão - Campus Coelho Neto. 
+                            Além disso, possui formação técnica em Automação Industrial pelo mesmo instituto. Com afinidade pela robótica, Igor integra o núcleo de robótica universitária, 
+                            onde já ministrou uma oficina no Seminário de Iniciação Científica 2024. Entre alguns feitos, destaca-se o recente terceiro lugar no FIRA Robocup 2024 junto a sua equipe e o primeiro
+                             lugar no Universo IFMA com um projeto de extensão voltado para o desenvolvimento sustentável na categoria de ciências básicas.
+                        </p>
+                            
+                        <div class="social-icon">
+                            <h3 class="contact">Contatos:</h3>
+                            <a href="https://x.com/Raiadosaz" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/ig0rryan/profilecard/?igsh=Z3NtZGtneXhtdW4w" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/IgorRaiad0" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.youtube.com/watch?v=bCrOJuZh3fE" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+            
+                        <a href="https://pt.scribd.com/user/424307319/Igor-Ryan" target="_blank" class="button">Trabalhos Acadêmicos</a>
+                    </div>
+                </div>
+            </section>
+            
+            
+
+            <section class="skills" id="Skills">
+                
+                <div class="perfil">
+                    
+                    <h3 class="perf">Perfil</h3>
+
+                    <img src="images/perfil.jpg" alt="perfil">
+                    
+                    <h3 class="nome">Igor Ryan</h3>
+                    
+                    <h3 class="ads">Graduando do 3º periodo em Análise e Desenvolvimento de Sistemas pelo IFMA - Campus Coelho Neto - MA</h3>
+                </div>
+
+                <div class="container">
+                    <h2 class="skill-description"> Principais Skills</h2>
+                    <div class="row" id="skillContainer">
+
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-logo-figma-48.png" alt="">
+                                <span>Figma</span>
+                            </div>
+                        </div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-coreldraw-logo-48.png" alt="">
+                                <span>Coreldraw</span>
+                            </div>
+                        </div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-photoshop-48.png" alt="">
+                                <span>Photoshop</span>
+                            </div>
+                        </div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-html-logo-48.png" alt="">
+                                <span> HTML</span>
+                            </div>
+                        </div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-css-logo-48.png" alt="">
+                                <span>CSS</span>
+                            </div>
+                        </div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-javascript-48.png" alt="">
+                                <span>Javascript</span>
+                            </div>
+                        </div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-react-native-48.png" alt="">
+                                <span>React</span>
+                            </div>
+                        </div>
+                        
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-python-48.png" alt="">
+                                <span>Python</span>
+                            </div>
+                        </div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-programação-c-48.png" alt="">
+                                <span>C</span>
+                            </div>
+                        </div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-c++-48.png" alt="">
+                                <span> C++</span>
+                            </div>
+                        </div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-arduino-48.png" alt="">
+                                <span>Arduino</span>
+                            </div>
+                        </div>
+
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-microsoft-365-48.png" alt="">
+                                <span>Office</span>
+                            </div>   
+                        </div>
+                    
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-github-40.png" alt="">
+                                <span>Github</span>
+                            </div>   
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-node-js-48.png" alt="">
+                                <span>Node js</span>
+                            </div>   
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-autocad-48.png" alt="">
+                                <span>Autocad</span>
+                            </div>   
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-adobe-premiere-pro-48.png" alt="">
+                                <span>Premiere</span>
+                            </div>   
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-bilingual-48.png" alt="">
+                                <span>Inglês Intrumental</span>
+                            </div>   
+                        </div>
+                        <div class="bar">
+                            <div class="info">
+                                <img src="images/icons8-tools-48.png" alt="">
+                                <span>Suporte Técnico</span>
+                            </div>   
+                        </div>
+                    
+                    </div>
+
+                </div>
+                
+            </section>
+
+            <section class="curriculo" id="Curriculo">
+            
+                
+                <div class="img">
+                    <img src="/images/pdf.png" alt="perfil">
+                </div>
+
+                <div class="container">
+                    <h2>Baixe meu currículo</h2>
+
+                        <a href="/Arquivos/Currículo Profissional Igor Ryan.pdf" class="dbutton" download="Currículo Profissional Igor Ryan">
+                            Download
+                        </a>
+                        
+                </div>
+
+
+            </section>
+
+            <footer class="footer">
+                <div class="containerf">
+                    <div class="social">
+                        <a href="https://x.com/Raiadosaz" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.instagram.com/ig0rryan/profilecard/?igsh=Z3NtZGtneXhtdW4w" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com/IgorRaiad0" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.youtube.com/watch?v=bCrOJuZh3fE" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+
+                    <h5 class="year">Portfólio-2024</h5>
+
+                </div>
+                
+            </footer>
+
+            
+
+        </body>
+</html>
